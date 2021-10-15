@@ -16,7 +16,7 @@ Mechacartable1 <- read.csv(file='/Users/savannahestridge/Desktop/R_Analysis/Mech
 #In the lm() function, pass in all six variables (i.e., columns), 
 #and add the dataframe you created in Step 4 as the data parameter.
 
-reg = lm(mpg ~ vehicle_length, vehicle_weight, data = MechaCar_mpg)
+reg = lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data = MechaCar_mpg)
 
 
 #6. Using the summary() function, determine the p-value 
@@ -24,5 +24,7 @@ reg = lm(mpg ~ vehicle_length, vehicle_weight, data = MechaCar_mpg)
 
 summary(reg)
 
-# p-value: 2.632e-06
-# Multiple R-squared:  0.3715
+#p-value: 5.35e-11
+#Multiple R-squared:  0.7149
+
+
