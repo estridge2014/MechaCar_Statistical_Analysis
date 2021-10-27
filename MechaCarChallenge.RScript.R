@@ -52,3 +52,4 @@ show(total_summary)
 lot_summary <- susp_table %>% group_by(Manufacturing_Lot) %>% summarise(mean = mean(PSI), median = median(PSI), variance = var(PSI), sd = sd(PSI), .groups = 'keep')
 show(lot_summary)
 
+?t.test()
